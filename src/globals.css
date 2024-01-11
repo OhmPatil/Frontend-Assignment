@@ -31,3 +31,14 @@
   font-weight: 500;
   font-style: normal;
 }
+
+/* Tab group active tab style */
+.active-tab{
+    background-color: #3c422e;
+    color: #f6e6d9;
+}
+
+/* Tab group active content style */
+.active-content {
+  display: block;
+}
