@@ -7,6 +7,88 @@
     <title>Frontend Assignment</title>
   </head>
   <body class="w-screen h-screen">
-    <h1>GG Tailwind</h1>
+    <!-- Desktop view -->
+    <main class="flex">
+        <!-- TBD Left carousel section -->
+        <section class="w-1/2">
+            <img src="assets/oilImage1.webp" alt="" class="w-full">
+        </section>
+
+        <!-- Right section -->
+        <section class="w-1/2 bg-[#f6e6d9] flex flex-col justify-center items-center gap-4">
+            <!-- Heading -->
+            <h1 class="text-5xl text-[#3c422e] font-garamond tracking-tighter leading-tight text-center">"Drizzle" & "Sizzle" <br> <span class="underline">Extra Virgin Olive Oil</span></h1>
+            <!-- Reviews -->
+            <div class="flex justify-center items-center gap-3 text-[#3c422e]">
+                <div>&starf;&starf;&starf;&starf;&starf;</div>
+                <p class="font-alpina font-medium text-[16px]">953 Reviews</p>
+            </div>
+
+            <!-- Quantity selector -->
+            <div class="w-3/4 bg-[#fff4ec] flex flex-col gap-4 border-[1px] border-black rounded-2xl p-4">
+                <h4 class="text-[16px] font-alpina font-medium">Quantity</h4>
+                <!-- Quantity number cards -->
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="h-[6rem] flex flex-col justify-start items-center border-[1px] border-black rounded-xl">
+                        <p class="text-[24px] font-alpina font-medium">1</p>
+                        <p class="text-[16px] font-alpina font-medium">Set</p>
+                    </div>
+                    <div class="h-[6rem] flex flex-col justify-start items-center border-[1px] border-black rounded-xl">
+                        <p class="text-[24px] font-alpina font-medium">2</p>
+                        <p class="text-[16px] font-alpina font-medium">Sets</p>
+                    </div>
+                    <div class="h-[6rem] flex flex-col justify-start items-center border-[1px] border-black rounded-xl">
+                        <p class="text-[24px] font-alpina font-medium">3</p>
+                        <p class="text-[16px] font-alpina font-medium">Sets</p>
+                    </div>
+                    <div class="h-[6rem] flex flex-col justify-start items-center border-[1px] border-black rounded-xl">
+                        <p class="text-[24px] font-alpina font-medium">6</p>
+                        <p class="text-[16px] font-alpina font-medium">Sets</p>
+                    </div>
+                </div>
+
+                <!-- Subscription type selection -->
+                <div>
+                    <!-- One time purchase -->
+                    <div class="flex justify-between items-center border-dashed border-y-[1px] border-black py-4">
+                        <div class="flex gap-4">
+                            <input type="radio" id="one-time" name="subscription-type">
+                            <label for="one-time" class="font-alpina font-medium">One Time Purchase</label>
+                        </div>
+                        <div class="font-alpina">
+                            $37
+                        </div>
+                    </div>
+                    <!-- Subscribe and save -->
+                    <div class="flex justify-between items-center border-dashed border-b-[1px] border-black py-4">
+                        <div class="flex gap-4">
+                            <input type="radio" id="subscribe" name="subscription-type">
+                            <label for="subscribe" class="font-alpina font-medium">Subscribe & Save</label>
+                        </div>
+                        <div class="font-alpina">
+                            $33.30
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="relative w-full h-8 cursor-pointer mt-4">
+                        <!-- Bottom rectangle -->
+                        <div class="absolute w-full h-full rounded-full bg-gray-300 border-[1px] border-black"></div>
+                        <!-- Top rectangle -->
+                        <div class="absolute w-full h-full flex justify-center items-center font-alpina font-medium border-[1px] border-black rounded-full bg-[#d1e030] z-10 -translate-x-1 -translate-y-[.4rem] hover:transform-none transition-all duration-300">
+                            Add to cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab group -->
+            <div class="w-3/4 bg-[#fff4ec] border-[1px] border-black rounded-2xl p-4">
+
+            </div>
+        </section>
+
+
+    </main>
   </body>
 </html>

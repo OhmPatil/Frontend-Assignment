@@ -2,8 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        garamond: "garamond",
+        alpina: "alpina",
+      },
+    },
   },
   plugins: [],
-}
-
+};
