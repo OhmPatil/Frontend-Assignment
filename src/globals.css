@@ -42,3 +42,11 @@
 .active-content {
   display: block;
 }
+
+.active-quant{
+  background-color: #9eef80;
+}
+
+.active-sub{
+  background-color: #9eef80;
+}
