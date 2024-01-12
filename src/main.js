@@ -44,8 +44,7 @@ quantRadioButtons.forEach(radioButton => {
         }
     })
 })
-
-
+let submitButton = document.getElementById('submit-button')
 let subTypeRadioInputs = document.querySelectorAll('.sub-radio-input')
 let subRadioChecks = document.querySelectorAll('.sub-type-check')
 let discounts = document.querySelectorAll('.discount')
@@ -57,13 +56,14 @@ subTypeRadioInputs.forEach((input, index) => {
             subRadioChecks[index].classList.add('active-sub')
 
             if(input.id == 'one-time'){
-                // submitButton.textContent = `Add to Cart - ${oneTimePrice.textContent}`
+                submitButton.textContent = 'Add to Cart'
                 discounts[0].textContent = ''
                 discounts[1].textContent = '7% Off'
                 discounts[2].textContent = '9% Off'
                 discounts[3].textContent = '11% Off'
             }
             else if(input.id == 'subscribe'){
+                submitButton.textContent = 'Subscribe'
                 discounts[0].textContent = '10% Off'
                 discounts[1].textContent = '14% Off'
                 discounts[2].textContent = '15% Off'
@@ -72,5 +72,15 @@ subTypeRadioInputs.forEach((input, index) => {
         }
     })
 })
+
+
+var emblaNode = document.querySelector('.embla')  
+var options = { loop: false }  
+var emblaAPI = EmblaCarousel(emblaNode, options)
+console.log(emblaAPI) // Access API
+
+let nextButton = document.getElementById('next')
+
+
 
 

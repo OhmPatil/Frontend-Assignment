@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <script src="main.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <title>Frontend Assignment</title>
   </head>
+  
   <body class="w-screen h-screen relative">
     <!-- Navbar logo -->
-    <nav class="absolute p-4">
+    <nav class="absolute p-4 z-30">
         <img src="assets/logo.svg" alt="">
     </nav>
     <!-- Desktop view -->
     <main class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 bg-[#f6e6d9]">
-        <!-- Navbar logo and stuff -->
-        <!-- <nav class="absolute">
-            <img src="assets/logo.svg" alt="">
-        </nav> -->
         <!-- TBD Left carousel section -->
-        <section class="w-full lg:w-1/2">
-            <img src="assets/oilImage1.webp" alt="" class="w-full">
+        <section class="w-full lg:w-1/2 relative">
+            <!-- <img src="assets/oilImage1.webp" alt="" class="w-full"> -->
+            <button id="next" class="absolute z-50 left-0 top-[50%]">Next</button>
+            <div class="embla">
+                <div class="embla__container">
+                  <div class="embla__slide">
+                    <img src="assets/oilImage1.webp" alt="" class="w-full aspect-square object-cover">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="assets/oilImage2.webp" alt="" class="w-full aspect-square object-cover">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="assets/oilImage3.webp" alt="" class="w-full aspect-square object-cover">
+                  </div>
+                </div>
+              </div>
+              
         </section>
 
         <!-- Right section -->
@@ -104,13 +117,13 @@
                         </div>
                     </div>
 
-                    <!-- Button -->
+                    <!-- Submit Button -->
                     <div class="relative w-full h-8 cursor-pointer mt-4">
                         <!-- Bottom rectangle -->
                         <div class="absolute w-full h-full rounded-full bg-gray-300 border-[1px] border-black"></div>
                         <!-- Top rectangle -->
                         <div id="submit-button" class="absolute w-full h-full flex justify-center items-center font-alpina font-medium border-[1px] border-black rounded-full bg-[#d1e030] z-10 -translate-x-1 -translate-y-[.4rem] hover:transform-none transition-all duration-300">
-                            Add to cart
+                            Subscribe
                         </div>
                     </div>
                 </div>
