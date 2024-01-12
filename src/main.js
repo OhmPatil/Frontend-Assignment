@@ -79,8 +79,16 @@ var options = { loop: false }
 var emblaAPI = EmblaCarousel(emblaNode, options)
 console.log(emblaAPI) // Access API
 
-let nextButton = document.getElementById('next')
-
-
+let carouselButtons = document.querySelectorAll('.img-btn')
+carouselButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.id == 'img-btn-1') emblaAPI.scrollTo(0)
+        else if (button.id == 'img-btn-2') emblaAPI.scrollTo(1)
+        else if (button.id == 'img-btn-3') emblaAPI.scrollTo(2)
+        else if (button.id == 'img-btn-4') emblaAPI.scrollTo(3)
+        else if (button.id == 'img-btn-5') emblaAPI.scrollTo(4)
+        else if (button.id == 'img-btn-6') emblaAPI.scrollTo(5)
+    })
+})
 
 
